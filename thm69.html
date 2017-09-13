@@ -1,0 +1,20 @@
+<html>
+<body>
+<script>
+  function answer() {
+var x = number1.value;
+var y = number2.value;
+var z = Math.pow(x,2) + Math.pow(y,2);
+document.getElementById('matthew').innerHTML = Math.sqrt(z);
+}
+</script>
+<h1>A:</h1>
+<input type="number" id="number1">
+<h2>B:</h2>
+<input type="number" id="number2">
+<br>
+<br>
+<button onclick="answer()">Show me what you got!</button>
+<h3 id="matthew"></h3>
+</body>
+</html>
