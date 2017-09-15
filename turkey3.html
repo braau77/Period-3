@@ -1,0 +1,20 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <input type='text' id="food">
+    <script>
+      function removeOne(){
+        var stupidKid = document.getElementsByTagName('li')[food.value];
+        var hana = stupidKid.parentNode;
+        hana.removeChild(stupidKid);
+      }
+    </script>
+    <button onclick="removeOne()">Click Here</button>
+    <ul>
+      <li>Justin</li>
+      <li>Brian Dang</li>
+      <li>Brandon Au</li>
+    </ul>
+  </body>
+</html>
