@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <style>
+      
+    </style>
+       <script>
+      function addOne() {
+        var newItem = document.createElement('li');
+        var newText = document.createTextNode(addGuest1.value);
+        newItem.appendChild(newText);
+        var position = document.getElementsByTagName('ol')[0];
+        position.appendChild(newItem);
+      }
+      
+      function removeOne() {
+        var removeGuest1 = document.getElementsByTagName('li')[1];
+        var kickGuest1 = removeGuest1.parentNode;
+        kickGuest1.removeChild(removeGuest1);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="addGuest1">
+      <button onclick="addOne()">Add Guest To List</button>
+      <ol></ol>
+      <br>
+      <input type="text" id="removeGuest1">
+      <button onclick="removeOne()">Remove Guest from List</button>
+    </div>
+  </body>
+</html>
