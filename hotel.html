@@ -4,29 +4,39 @@
       
     </style>
        <script>
+        a=0;
       function addOne() {
+        if(a < 3){
         var newItem = document.createElement('li');
         var newText = document.createTextNode(addGuest1.value);
         newItem.appendChild(newText);
         var position = document.getElementsByTagName('ol')[0];
         position.appendChild(newItem);
+        a++;
+        }
+        else{
+          
+        }
       }
       
       function removeOne() {
-        var removeGuest1 = document.getElementsByTagName('li')[1];
-        var kickGuest1 = removeGuest1.parentNode;
-        kickGuest1.removeChild(removeGuest1);
+        var x = removeGuest1.value;
+        var y = parseInt(x-1);
+        var removeGuestz = document.getElementsByTagName('li')[y];
+        var kickGuest1 = removeGuestz.parentNode;
+        kickGuest1.removeChild(removeGuestz);
+        a--;
       }
     </script>
   </head>
   <body>
     <div>
       <input type="text" id="addGuest1">
-      <button onclick="addOne()">Add Guest To List</button>
-      <ol></ol>
+      <button onclick="addOne()">Check In</button>
       <br>
       <input type="text" id="removeGuest1">
-      <button onclick="removeOne()">Remove Guest from List</button>
+      <button onclick="removeOne()">Check Out</button>
+      <ol></ol>
     </div>
   </body>
 </html>
