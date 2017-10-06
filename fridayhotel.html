@@ -1,0 +1,224 @@
+<html>
+  <head>
+      <h1><div id="namez">Beandon's Hotel</div></h1>
+    <div id="topz">
+      <p onclick="aboutUs()" id="ichi">About Us</p>
+      <p onclick="kickStarter()" id="ni">Kick Starter</p>
+      <p onclick=""></p>
+    </div>
+    <style>
+      #namez {
+        margin: auto;
+        background-color: purple;
+        width: 25%;
+        height: 3%;
+        border-style: solid;
+        border-radius: 25px;
+        padding: 20px;
+        text-align: center;
+        font-size: 35 px;
+      }
+      #topz {
+        background-color: pink;
+        width: 96%;
+        height: 5%;
+        margin: 4px;
+        border-style: solid;
+        border-radius: 25px;
+        padding: 20px;
+      }
+      #hello {
+        background-image: url("https://img2.10bestmedia.com/Images/Photos/255131/BellagioExterior3_54_990x660_201404251834.jpg");
+        background-size: cover;
+      }
+      #juan {
+        float: left;
+        width: 21%;
+        height: 40%;
+        background-color: red;
+        margin: 4px;
+        border-style: solid;
+        border-radius: 25px;
+        padding: 20px;
+      }
+      #deag {
+        float: left;
+        width: 21%;
+        height: 40%;
+        background-color: yellow;
+        margin: 4px;
+        border-style: solid;
+        border-radius: 25px;
+        padding: 20px;
+      }
+      #play {
+        float: left;
+        width: 21%;
+        height: 40%;
+        background-color: green;
+        margin: 4px;
+        border-style: solid;
+        border-radius: 25px;
+        padding: 20px;
+      }
+      #csgo {
+        float: left;
+        width: 21%;
+        height: 40%;
+        background-color: blue;
+        margin: 4px;
+        border-style: solid;
+        border-radius: 25px;
+        padding: 20px;
+      }
+    </style>
+       <script>
+        a=0;
+        b=0;
+        c=0;
+        d=0;
+      function aboutUs() {
+        document.getElementById('ichi').innerHTML = "The hotel was found in 2017 and was helped funded by Matthew Getty";
+      }
+      function addOne() {
+        if(a < 3){
+        var newItem = document.createElement('li');
+        var DT = new Date().toUTCString();
+        var newText = document.createTextNode(addGuest1.value + " has checked in since " + DT);
+        newItem.appendChild(newText);
+        var position = document.querySelectorAll("ol.ones")[0];
+        position.appendChild(newItem);
+        a++;
+        }
+        else{
+          document.getElementById('matthew').innerHTML = "Sorry the room is currently full.";
+        }
+      }
+      
+      function removeOne() {
+        var x = removeGuest1.value;
+        var y = parseInt(x-1);
+        var removeGuestz = document.getElementsByTagName('li')[y];
+        var kickGuest1 = removeGuestz.parentNode;
+        kickGuest1.removeChild(removeGuestz);
+        a--;
+        document.getElementById('matthew').innerHTML = "";
+      }
+      function addTwo() {
+        if(b < 3){
+        var newItem2 = document.createElement('li');
+        var DT1 = new Date().toUTCString();
+        var newText2 = document.createTextNode(addGuest2.value + " has checked in since " + DT1);
+        newItem2.appendChild(newText2);
+        var position2 = document.querySelectorAll("ol.twos")[0];
+        position2.appendChild(newItem2);
+        b++;
+        }
+        else{
+          document.getElementById('matthew1').innerHTML = "Sorry the room is currently full.";
+        }
+      }
+      
+      function removeTwo() {
+        var g = removeGuest2.value;
+        var h = parseInt(g-1);
+        var ban1 = document.getElementById("twoz");
+        var removeGuestz2 = ban1.getElementsByTagName('li')[h];
+        var kickGuest2 = removeGuestz2.parentNode;
+        kickGuest2.removeChild(removeGuestz2);
+        b--;
+        document.getElementById('matthew1').innerHTML = "";
+      }
+      
+      function addThree() {
+        if(c < 3){
+        var newItem3 = document.createElement('li');
+        var DT2 = new Date().toUTCString();
+        var newText3 = document.createTextNode(addGuest3.value + " has checked in since " + DT2);
+        newItem3.appendChild(newText3);
+        var position3 = document.querySelectorAll("ol.threes")[0];
+        position3.appendChild(newItem3);
+        c++;
+        }
+        else{
+          document.getElementById('matthew2').innerHTML = "Sorry the room is currently full.";
+        }
+      }
+      
+      function removeThree() {
+        var r = removeGuest3.value;
+        var s = parseInt(r-1);
+        var ban2 = document.getElementById("threez");
+        var removeGuestz3 = ban2.getElementsByTagName('li')[s];
+        var kickGuest3 = removeGuestz3.parentNode;
+        kickGuest3.removeChild(removeGuestz3);
+        c--;
+        document.getElementById('matthew2').innerHTML = "";
+      }
+      
+      function addFour() {
+        if(d < 3){
+        var newItem4 = document.createElement('li');
+        var DT3 = new Date().toUTCString();
+        var newText4 = document.createTextNode(addGuest4.value + " has checked in since " + DT3);
+        newItem4.appendChild(newText4);
+        var position4 = document.querySelectorAll("ol.fours")[0];
+        position4.appendChild(newItem4);
+        d++;
+        }
+        else{
+          document.getElementById('matthew3').innerHTML = "Sorry the room is currently full."
+        }
+      }
+      
+      function removeFour() {
+        var u = removeGuest4.value;
+        var v = parseInt(u-1);
+        var ban3 = document.getElementById("fourz");
+        var removeGuestz4 = ban3.getElementsByTagName('li')[v];
+        var kickGuest4 = removeGuestz4.parentNode;
+        kickGuest4.removeChild(removeGuestz4);
+        d--;
+        document.getElementById('matthew3').innerHTML = "";
+      }
+    </script>
+  </head>
+  <body id="hello">
+    <div id="juan">
+      <input type="text" id="addGuest1">
+      <button onclick="addOne()">Check In</button>
+      <br>
+      <input type="text" id="removeGuest1">
+      <button onclick="removeOne()">Check Out</button>
+      <ol class="ones" id="onez"></ol>
+      <p id="matthew"></p>
+    </div>
+    <div id="deag">
+      <input type="text" id="addGuest2">
+      <button onclick="addTwo()">Check In</button>
+      <br>
+      <input type="text" id="removeGuest2">
+      <button onclick="removeTwo()">Check Out</button>
+      <ol class="twos" id="twoz"></ol>
+      <p id="matthew1"></p>
+    </div>
+    <div id="play">
+      <input type="text" id="addGuest3">
+      <button onclick="addThree()">Check In</button>
+      <br>
+      <input type="text" id="removeGuest3">
+      <button onclick="removeThree()">Check Out</button>
+      <ol class="threes" id="threez"></ol>
+      <p id="matthew2"></p>
+    </div>
+    <div id="csgo">
+      <input type="text" id="addGuest4">
+      <button onclick="addFour()">Check In</button>
+      <br>
+      <input type="text" id="removeGuest4">
+      <button onclick="removeFour()">Check Out</button>
+      <ol class="fours" id="fourz"></ol>
+      <p id="matthew3"></p>
+    </div>
+  </body>
+</html>
