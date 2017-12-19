@@ -1,0 +1,102 @@
+body{
+	background-image: url("https://nipponrama.com/file/2017/02/tojin-yashiki-1024x525.jpg");
+	background-size: cover;
+}
+#nameRestaurant{
+	text-align: center;
+	color: green;
+}
+#order69{
+	text-align: center;
+	background-image: url("https://i.pinimg.com/originals/18/6b/ff/186bff6695c2492c623050593867689e.jpg");
+	background-size: cover;
+	width: 20%;
+	height: 27%;
+	border-radius: 10px;
+	float: left;
+}
+#text1{
+	color: blue;
+	font-size: 32px;
+	margin: -1px;
+}
+#priceText1{
+	color: blue;
+}
+#order73{
+	text-align: center;
+	background-image: url("http://blogchef.net/wp-content/uploads/2009/04/honey_walnut_shrimp_3.jpg");
+	background-size: cover;
+	width: 20%;
+	height: 27%;
+	border-radius: 10px;
+	float: left;
+}
+#text2{
+	color: blue;
+	font-size: 32px;
+	margin: -1px;
+}
+#priceText2{
+	color: blue;
+}
+#order82{
+	text-align: center;
+	background-image: url("http://vignette2.wikia.nocookie.net/dimsum/images/7/78/Sesame_balls.jpg/revision/latest/scale-to-width-down/2000?cb=20150514195454");
+	background-size: cover;
+	width: 20%;
+	height: 27%;
+	border-radius: 10px;
+	float: left;
+}
+#text3{
+	color: blue;
+	font-size: 32px;
+	margin: -1px;
+}
+#priceText3{
+	color: blue;
+}
+#order109{
+	text-align: center;
+	background-image: url("https://lh3.googleusercontent.com/zmJSJ-hZTxv5K6bYJyu1jpRCUKh57Cz4x8b6PR95i_tQw6wKhW0K57d7cct3e8R9ArZz0vJG3B0_67Ey7cok2rmOcm1hKUHdz5X5cpGy=w600-l68");
+	background-size: cover;
+	width: 20%;
+	height: 27%;
+	border-radius: 10px;
+	float: left;
+}
+#text4{
+	color: blue;
+	font-size: 32px;
+	margin: -1px;
+}
+#priceText4{
+	color: blue;
+}
+#order125{
+	text-align: center;
+	background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/0b/a3/24/e5/beef-fried-noodles.jpg");
+	background-size: cover;
+	width: 20%;
+	height: 27%;
+	border-radius: 10px;
+	float: left;
+}
+#text5{
+	color: blue;
+	font-size: 32px;
+	margin: -1px;
+}
+#priceText5{
+	color: blue;
+}
+#totalsBox {
+	background-color: red;
+	height: 50%;
+	width: 33%;
+	text-align: center;
+	float: left;
+	margin: 10px 0px 0px 0px;
+	border-radius: 10px;
+}
